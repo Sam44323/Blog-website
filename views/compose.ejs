@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+
+<section id="compose">
+  <h1>Compose</h1>
+
+  <hr>
+
+  <form action="/compose" method="post">
+
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="postTitle" autocomplete="off" required>
+    </div>
+    <div class="form-group">
+      <label>Post</label>
+      <textarea class="compos form-control" id="exampleFormControlTextarea1" rows="5" cols="30" name="postBody" required></textarea>
+    </div>
+  <label for="email">Enter your email</label>
+  <input type="email" name="email" autocomplete="off" required>
+
+    <button class="btn btn-primary" type="submit" value="Submit">Publish</button>
+
+  </form>
+</section>
+
+
+<%- include("partials/footer") -%>

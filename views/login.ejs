@@ -1,0 +1,17 @@
+<%- include("authentication/top") -%>
+
+<form class="form-signin" action="/login" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Please Login</h1>
+
+    <input type="text" name="fName" id="inputEmail" class="form-control top" placeholder="First Name" required autofocus>
+    <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+    <input type="email" class="form-control bottom" name="email" placeholder="Email Address" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+  </form>
+
+<%- include("authentication/low") -%>
